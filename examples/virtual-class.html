@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            width: 100px;
+            height: 100px;
+        }
+        form:has(>button) {
+            color: yellow;
+        }
+        form:has(>button:hover) {
+            color: pink;
+        }
+        form:has(input) {
+            background-color: cadetblue;
+        }
+        form > input {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<form>11
+    <input type="text">
+    <input checked type="checkbox">
+    <button>button</button>
+</form>
+</body>
+</html>
